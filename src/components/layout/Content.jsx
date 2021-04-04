@@ -11,11 +11,11 @@ const Content = props => (
            <Route path="/about">
                <About></About>
            </Route>
-           <Route path="/home">
-               <Home></Home> 
-           </Route>
            <Route path="/param/:id">
                <Param></Param>
+           </Route>
+           <Route exact path="/">
+               <Home></Home> 
            </Route>
        </Switch>
     </main>
